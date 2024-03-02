@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     refreshButton.addEventListener('click', () => {
-        searchInput.value = ''; // Очистить поле поиска
-        fetchUsers(); // Вызвать fetchUsers без параметра, чтобы получить и отобразить весь список
+        searchInput.value = '';
+        fetchUsers();
     });
 
-    fetchUsers(); // Инициализирующий вызов для отображения всех пользователей при загрузке страницы
+    fetchUsers();
 });
 
 
@@ -30,7 +30,6 @@ async function fetchUsers(filter = '') {
         displayUsers(filteredUsers);
     } catch (error) {
         console.error('Ошибка при получении данных:', error);
-        // Здесь вы можете добавить отображение сообщения об ошибке в вашем UI, если нужно
     }
 }
 
