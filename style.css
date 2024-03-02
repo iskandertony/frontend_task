@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.user-card {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(30.333% - 20px); /* 3 карточки в ряд с учетом margin */
+    box-sizing: border-box; /* Убедитесь, что padding не влияет на общую ширину */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-card h3 {
+    margin-top: 0;
+}
+
+.user-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .user-card {
+        width: calc(50.333% - 10px);
+    }
+
+    .user-list {
+        justify-content: center;
+    }
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none; /* Убираем контур при фокусе */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+}
+
+button:active {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    opacity: 0.5;
+}
+
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.3087px;
+    line-height: 145%;
+    color: #fff;
+}
+
+.name {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #fff;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.2081px;
+    line-height: 145%;
+    color: #fff;
+}
